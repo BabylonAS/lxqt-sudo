@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-
 project(lxqt-sudo)
 
 include(GNUInstallDirs)
@@ -40,10 +38,6 @@ set ( MOCS
 set( UIS
     passworddialog.ui
 )
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
 
 # Translations **********************************
 include(LXQtTranslate)
